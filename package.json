@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon",
+    "client": "cd client && npm start",
+    "dev": "concurrently \" npm run server\" \"npm run client\""
+  },
+  "author": "Samuel Both",
+  "license": "BQS",
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
